@@ -54,8 +54,8 @@ p {
 /* Header Styles ****************/
 
 header {
-    background-image: url(../assets/image1.jpg);
     min-height: 100vh;
+    background-image: url(../assets/image1.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -110,19 +110,28 @@ i {
 }
 
 /* compValues section ***************************** */
-.value1con,
-.value2con {
+
+.valueCon {
     height: 60vh;
+}
+
+.valueImage1,
+.valueImage2 {
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.valueText1,
+.valueText2 {
+    
 }
 
 .valueImage1 {
     float: right;
-    height: 100%;
-    width: 50%;
     background-image: url(../assets/image2a.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .valueText1 {
@@ -134,13 +143,7 @@ i {
 
 .valueImage2 {
     float: left;
-    width: 50%;
-    height: 100%;
     background-image: url(../assets/image2b.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
 }
 
 .valueText2 {
@@ -224,7 +227,7 @@ i {
 }
 
 .linkIconsConCon i {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .linkIconsConCon p {
@@ -380,8 +383,7 @@ button:hover {
   }
 
   @media (max-width: 810px) {
-    .value1con,
-    .value2con {
+    .valueCon {
     height: 100%;
     text-align: center;
     }
