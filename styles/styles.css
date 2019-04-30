@@ -9,10 +9,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 
 /******************************************************************************
-TO DO:
-change nav to floats instead of changing display. APply this
-principal everywhere
-*/
+
+
 /* Universal Styles ********************************************* */
 
 html {font-size: 125%;}
@@ -73,9 +71,7 @@ ul li {
     text-transform: capitalize;
 }
 
-ul a:hover {
-    color: rgb(232,91,38);
-}
+ul a:hover {color: rgb(232,91,38);}
 
 .mainTitle {
     display: inline-block;
@@ -90,30 +86,30 @@ ul a:hover {
     margin-left: 16%;
 }
 
+span {display: block;}
+
 .socialMedia {
     position: absolute;
     top: 360px;
     right: 4%;
 }
 
-.socialMedia a {
-    margin-bottom: 20px;
-}
+.socialMedia a {margin-bottom: 16px;}
 
 i {
     font-size: 1.15rem;
     color: rgb(232,91,38);
 }
 
-.burger {
-    visibility: hidden;
-}
+.burger {visibility: hidden;}
 
 /* compValues section ***************************** */
 
-.valueCon {
-    height: 60vh;
-}
+.valueCon {height: 60vh;}
+
+.valueCon p {margin: 5% 0;}
+
+.ghostWrap {height: 100%;}
 
 .valueImage1,
 .valueImage2 {
@@ -126,48 +122,36 @@ i {
 
 .valueText1,
 .valueText2 {
-    
+    width: 50%;
 }
 
-.valueImage1 {
-    float: right;
-    background-image: url(../assets/image2a.jpg);
-}
-
+.valueImage1,
 .valueText1 {
     float: right;
-    width: 50%;
-    padding: 11% 7% 0 0; /* turn to 5% at smaller sizes */
-
 }
 
-.valueImage2 {
-    float: left;
-    background-image: url(../assets/image2b.jpg);
-}
-
+.valueImage2,
 .valueText2 {
     float: left;
-    width: 50%;
-    padding: 11% 0 0 7%;
 }
 
-.valueText1 p,
-.valueText2 p {
-    margin: 5% 0;
-}
+.valueImage1 {background-image: url(../assets/image2a.jpg);}
+
+.valueText1 {padding: 11% 7% 0 0;}
+
+.valueImage2 {background-image: url(../assets/image2b.jpg);}
+
+.valueText2 {padding: 11% 0 0 7%;}
 
 .readButton {
-    border: 2px solid rgb(232,91,38);
     display: inline-block;
+    border: 2px solid rgb(232,91,38);
     padding: 11px;
     text-transform: uppercase;
     transition: background-color 0.5s;
 }
 
-.readButton:hover {
-    background-color: rgb(232,91,38);
-}
+.readButton:hover {background-color: rgb(232,91,38);}
 
 /* GivingBack secion ***************************** */
 
@@ -176,12 +160,15 @@ i {
     background-color: rgb(244, 244, 244);
     padding: 4% 0;
 }
-.givingBackCon > div {
-    height: 100%;
+
+.givingBackCon > div {height: 100%;}
+
+.givingBackImg,
+.givingBackText {
+    float: left;
 }
 
 .givingBackImg {
-    float: left;
     height: 100%;
     width: calc(30% - 40px);
     margin-right: 40px;
@@ -193,15 +180,9 @@ i {
     object-fit: cover;
 }
 
-.givingBackText {
-    float: left;
-    width: 70%;
-}
+.givingBackText {width: 70%;}
 
-.givingBackText p {
-    margin: 3% 0;
-}
-
+.givingBackText p {margin: 3% 0;}
 
 /* External Links secion ***************************** */
 
@@ -216,7 +197,7 @@ i {
 
 .linkIconsCondiv {
     background-color: rgb(244, 244, 244);
-    width: 52%;
+    width: 50%;
     padding: 5% 0;
     margin: 0 auto;
 }
@@ -226,9 +207,7 @@ i {
     width: calc(100% / 3);
 }
 
-.linkIconsConCon i {
-    font-size: 3rem;
-}
+.linkIconsConCon i {font-size: 3rem;}
 
 .linkIconsConCon p {
     font-size: 1.5rem;
@@ -238,9 +217,7 @@ i {
 
 /* External Links secion ***************************** */
 
-.theGram {
-    padding-bottom: 5%;
-}
+.theGram {padding-bottom: 5%;}
 
 .theGram h2 {
     padding: 5% 0;
@@ -257,9 +234,7 @@ i {
     width: calc((100% / 3) - 10px);
 }
 
-.gramPics:nth-child(2) {
-    margin: 0 15px;
-}
+.gramPics:nth-child(2) {margin: 0 15px;}
 
 
 /* Footers secion ***************************** */
@@ -269,26 +244,18 @@ footer {
     padding: 4% 0 0;
 }
 
-footer h2 {
-    color: rgb(232,91,38);
-}
+footer h2 {color: rgb(232,91,38);}
 
-.navFooter {
-    text-align: center;
-}
+.navFooter {text-align: center;}
 
-.navFooter a {
-    color: black;
-}
+.navFooter a {color: black;}
 
 .footerInfo {
     float: left;
     width: 50%;
 }
-.footerInfo:first-child h2 {
-    padding-bottom: 2%;
-}
 
+.footerInfo:first-child h2 {padding-bottom: 2%;}
 
 input[type=email] {
     padding: 12px;
@@ -306,9 +273,7 @@ button {
     color: white;
 }
 
-button:hover {
-    border-color: rgb(232,91,38);
-}
+button:hover {border-color: rgb(232,91,38);}
 
 .copyright {
     text-align: center;
@@ -325,15 +290,11 @@ button:hover {
     padding: 10px;
 }
 
-
-
 /* responsiveness ***************************** */
 
 @media (max-width: 1280px) {
-    .givingBackCon {
-        height: auto;
+    .givingBackCon {height: auto;}
 
-    }
     .givingBackImg {
         float: none;
         width: 70%;
@@ -347,8 +308,7 @@ button:hover {
     }
 
     .givingBackText p {
-        text-align: left;
-    }
+        text-align: left;}
 
     input[type=email] {
         /* padding: 12px; */
@@ -363,12 +323,9 @@ button:hover {
         /* text-transform: uppercase;
         color: white; */
     }
-
   }
 
-
-  @media (max-width: 810px) {
-
+@media (max-width: 810px) {
     .mainTitle {
         font-size: 50px; 
         margin-top: 380px;
@@ -380,100 +337,61 @@ button:hover {
         top: 10%;
         right: 2%;
     }
-  }
 
-  @media (max-width: 810px) {
     .valueCon {
-    height: 100%;
-    text-align: center;
+        height: 100%;
+        text-align: center;
     }
     
-    .valueImage1 {
-        float: none;
-        height: 30vh;
-        width: 100%;
-        
-    }
-
-    .valueText1 {
-        float: none;
-        width: 100%;
-        padding: 10% 5%;
-        
-    }
-
-    .valueImage2 {
-        float: none;
-        height: 30vh;
-        width: 100%;
-        
-    }
-
-    .valueText2 {
-        float: none;
-        width: 100%;
-        padding: 10% 5%;
-    }
-
-    /* linkIconCon *********** */
-
+    .valueImage1,
+    .valueText1,
+    .valueImage2,
+    .valueText2,
     .linkIconsConCon {
         float: none;
         width: 100%;
     }
 
+    .valueImage1 {height: 30vh;  }
 
-    /* GRAM *********** 
-    decrease up the social media top
-    */
+    .valueText1 {padding: 10% 5%;}
+
+    .valueImage2 {height: 30vh;}
+
+    .valueText2 {padding: 10% 5%;}
+
+    .linkIconsCondiv,
+    .gramPics,
+    .gramPics:nth-child(2) {
+        margin: 0 auto;
+    }
 
     .linkIconsCondiv {
         background-color: rgb(244, 244, 244);
         max-width: 70%;
         padding: 5% 2%;
-        margin: 0 auto;
-    
-    }
-
-    .linkIconsConCon {
-        margin: 20px 0;
     }
 
     .gramPics {
         float: none;
         width: 70%;
-        margin: 0 auto;
     }
 
-    .gramPics:nth-child(2){
-        margin: 0 auto;
-    }
+    .linkIconsConCon i {font-size: 4rem;}
 
-    .linkIconsConCon i {
-        font-size: 4rem;
-    }
-
-    .linkIconsConCon p{
-        font-size: 2rem;
-    }
+    .linkIconsConCon p {font-size: 2rem;}
   }
 
 @media (max-width: 500px) {
-
-    .wrapper {
-        width: 90%;
-    }
+    .wrapper {width: 90%;}
     
     header {
-        background-image: url(../assets/image-1.jpg);
+        background-image: url(../assets/image9.jpg);
         min-height: 55vh;
     }
 
+    .navHeader ul,
     .socialMedia {
-        visibility: hidden;
-    }
-
-    .navHeader ul {
         visibility: hidden;
     }
 
@@ -494,45 +412,26 @@ button:hover {
         line-height: 0.93;
     }
 
-    h2 {
-        font-size: 1.3rem;
-    }
+    h2 {font-size: 1.3rem;}
 
-    p {
-        font-size: 0.7rem;
-    }
+    p {font-size: 0.7rem;}
 
-    .givingBackCon {
-        padding-top: 30px;
-    }
+    .givingBackCon {padding-top: 30px;}
 
-    .givingBackImg {
-        width: 100%;
-    }
+    .givingBackImg {width: 100%;}
 
-    .linkIconsConCon i {
-        font-size: 2.5rem;
-    }
+    .linkIconsConCon i {font-size: 2.5rem;}
 
-    .linkIconsConCon p{
-        font-size: 1.5rem;
-    }
+    .linkIconsConCon p{font-size: 1.5rem;}
 
-    .linkIconsNames {
-        font-family: 'Nova Flat', cursive;
-    }
+    .linkIconsNames {font-family: 'Nova Flat', cursive;}
 
-    .theGram h2 {
-        padding: 10% 0;
-    }
+    .theGram h2 {padding: 10% 0;}
     
-    .gramPics:last-child {
-        display: none;
-    }
+    .gramPics:last-child {display: none;}
 
-    .gramPics:first-child {
-        margin-right: 18px;
-    }
+    .gramPics:first-child {margin-right: 18px;}
+
     .gramPics {
         float: left;
         width: calc(50% - 9px);
@@ -543,13 +442,9 @@ button:hover {
         font-size: 0.7rem;
     }
 
-    .navFooter li:last-child {
-        margin-right: 0;
-    } 
+    .navFooter li:last-child {margin-right: 0;} 
 
-    .footerInfo:first-child h2 {
-        padding-bottom: 0;
-    }
+    .footerInfo:first-child h2 {padding-bottom: 0;}
 
     .footerInfo {
         float: none;
@@ -557,42 +452,7 @@ button:hover {
         text-align: center;
     }
 
-    .footerInfo h2 {
-        margin: 40px 0 15px;
-    }
+    .footerInfo h2 {margin: 40px 0 15px;}
 
-    form {
-        font-size: 0.8rem;
-    }
-
-    
-    
-        /* 
-        *change the header vh to 80(playaround)
-        *add in new background header img
-        *remove nav and replace with burger
-        *remove social media 
-        *change mainitle size and position
-
-        *change all font sizes to rem
-        -----no----change header - speacilize in (x2)
-        
-        make givingback shoes 100%
-        change giving back title
-
-        change icon and p sizes to 30% less
-
-        change the gram header 
-        make the 2 images 50% and elimanate the last image 
-
-        decrease nav margin inbetween the links
-        (add links to the ul of navs btw)
-
-        stack contac underneat the newsletter 
-        add copyright
-
-        fix links
-
-
-        */
+    form {font-size: 0.8rem;}
   }
