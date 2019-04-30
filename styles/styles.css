@@ -1,0 +1,596 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+
+
+/******************************************************************************
+TO DO:
+change nav to floats instead of changing display. APply this
+principal everywhere
+*/
+/* Universal Styles ********************************************* */
+
+html {font-size: 125%;}
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+h1,
+h2,
+h3,
+a,
+li,
+button {
+    font-family: 'Nova Flat', cursive;
+    color: rgb(24,102,132);
+}
+
+h2 {font-size: 2.1rem;}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Catamaran', sans-serif;
+    line-height: 1.45;
+    font-size: 1rem;
+}
+
+/* Header Styles ****************/
+
+header {
+    background-image: url(../assets/image1.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    margin: 0 auto;
+}
+
+ul li {
+    display: inline-block;
+    margin: 24px 30px;
+    text-transform: capitalize;
+}
+
+ul a:hover {
+    color: rgb(232,91,38);
+}
+
+.mainTitle {
+    display: inline-block;
+    background-color: rgba(227, 228, 234, 0.89);  
+    
+    font-size: 3.5rem; 
+    line-height: 0.82;
+    text-align: left;
+    
+    padding: 13px;
+    margin-top: 331px;
+    margin-left: 16%;
+}
+
+.socialMedia {
+    position: absolute;
+    top: 360px;
+    right: 4%;
+}
+
+.socialMedia a {
+    margin-bottom: 20px;
+}
+
+i {
+    font-size: 1.15rem;
+    color: rgb(232,91,38);
+}
+
+.burger {
+    visibility: hidden;
+}
+
+/* compValues section ***************************** */
+.value1con,
+.value2con {
+    height: 60vh;
+}
+
+.valueImage1 {
+    float: right;
+    height: 100%;
+    width: 50%;
+    background-image: url(../assets/image2a.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.valueText1 {
+    float: right;
+    width: 50%;
+    padding: 11% 7% 0 0; /* turn to 5% at smaller sizes */
+
+}
+
+.valueImage2 {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-image: url(../assets/image2b.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.valueText2 {
+    float: left;
+    width: 50%;
+    padding: 11% 0 0 7%;
+}
+
+.valueText1 p,
+.valueText2 p {
+    margin: 5% 0;
+}
+
+.readButton {
+    border: 2px solid rgb(232,91,38);
+    display: inline-block;
+    padding: 11px;
+    text-transform: uppercase;
+    transition: background-color 0.5s;
+}
+
+.readButton:hover {
+    background-color: rgb(232,91,38);
+}
+
+/* GivingBack secion ***************************** */
+
+.givingBackCon {
+    height: 50vh;
+    background-color: rgb(244, 244, 244);
+    padding: 4% 0;
+}
+.givingBackCon > div {
+    height: 100%;
+}
+
+.givingBackImg {
+    float: left;
+    height: 100%;
+    width: calc(30% - 40px);
+    margin-right: 40px;
+}
+
+.givingBackImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.givingBackText {
+    float: left;
+    width: 70%;
+}
+
+.givingBackText p {
+    margin: 3% 0;
+}
+
+
+/* External Links secion ***************************** */
+
+
+.linkIconsCon {
+    padding: 5% 0;
+    background-image: url(../assets/image8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.linkIconsCondiv {
+    background-color: rgb(244, 244, 244);
+    width: 52%;
+    padding: 5% 0;
+    margin: 0 auto;
+}
+
+.linkIconsConCon {
+    float: left;
+    width: calc(100% / 3);
+}
+
+.linkIconsConCon i {
+    font-size: 4rem;
+}
+
+.linkIconsConCon p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+
+/* External Links secion ***************************** */
+
+.theGram {
+    padding-bottom: 5%;
+}
+
+.theGram h2 {
+    padding: 5% 0;
+    text-align: center;
+}
+
+.gramPics img {
+    height: 100%;
+    width: 100%;
+}
+
+.gramPics {
+    float: left;
+    width: calc((100% / 3) - 10px);
+}
+
+.gramPics:nth-child(2) {
+    margin: 0 15px;
+}
+
+
+/* Footers secion ***************************** */
+
+footer {
+    background-color: rgb(244, 244, 244);
+    padding: 4% 0 0;
+}
+
+footer h2 {
+    color: rgb(232,91,38);
+}
+
+.navFooter {
+    text-align: center;
+}
+
+.navFooter a {
+    color: black;
+}
+
+.footerInfo {
+    float: left;
+    width: 50%;
+}
+.footerInfo:first-child h2 {
+    padding-bottom: 2%;
+}
+
+
+input[type=email] {
+    padding: 12px;
+    border: none;
+    width: 79%;
+    margin-top: 3.3%;
+}
+
+button {
+    padding: 1.45% 0;
+    background-color: rgb(24,102,132);
+    border: 2px solid rgb(24,102,132);
+    width: 20%;
+    text-transform: uppercase;
+    color: white;
+}
+
+button:hover {
+    border-color: rgb(232,91,38);
+}
+
+.copyright {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(252, 252, 252);
+    margin-top: 4%;
+}
+
+.copyright p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0.5;
+    line-height: 1.61;
+    padding: 10px;
+}
+
+
+
+/* responsiveness ***************************** */
+
+@media (max-width: 1280px) {
+    .givingBackCon {
+        height: auto;
+
+    }
+    .givingBackImg {
+        float: none;
+        width: 70%;
+        margin: 0 auto 20px auto;
+        height: 30vh;
+    }    
+    .givingBackText {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .givingBackText p {
+        text-align: left;
+    }
+
+    input[type=email] {
+        /* padding: 12px; */
+        width: 100%;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    
+    button {
+        padding: 1.45% 0;
+        width: 100%;
+        /* text-transform: uppercase;
+        color: white; */
+    }
+
+  }
+
+
+  @media (max-width: 810px) {
+
+    .mainTitle {
+        font-size: 50px; 
+        margin-top: 380px;
+        margin-left: 10%;
+    }
+
+    .socialMedia {
+        position: absolute;
+        top: 10%;
+        right: 2%;
+    }
+  }
+
+  @media (max-width: 810px) {
+    .value1con,
+    .value2con {
+    height: 100%;
+    text-align: center;
+    }
+    
+    .valueImage1 {
+        float: none;
+        height: 30vh;
+        width: 100%;
+        
+    }
+
+    .valueText1 {
+        float: none;
+        width: 100%;
+        padding: 10% 5%;
+        
+    }
+
+    .valueImage2 {
+        float: none;
+        height: 30vh;
+        width: 100%;
+        
+    }
+
+    .valueText2 {
+        float: none;
+        width: 100%;
+        padding: 10% 5%;
+    }
+
+    /* linkIconCon *********** */
+
+    .linkIconsConCon {
+        float: none;
+        width: 100%;
+    }
+
+
+    /* GRAM *********** 
+    decrease up the social media top
+    */
+
+    .linkIconsCondiv {
+        background-color: rgb(244, 244, 244);
+        max-width: 70%;
+        padding: 5% 2%;
+        margin: 0 auto;
+    
+    }
+
+    .linkIconsConCon {
+        margin: 20px 0;
+    }
+
+    .gramPics {
+        float: none;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .gramPics:nth-child(2){
+        margin: 0 auto;
+    }
+
+    .linkIconsConCon i {
+        font-size: 4rem;
+    }
+
+    .linkIconsConCon p{
+        font-size: 2rem;
+    }
+  }
+
+@media (max-width: 500px) {
+
+    .wrapper {
+        width: 90%;
+    }
+    
+    header {
+        background-image: url(../assets/image-1.jpg);
+        min-height: 55vh;
+    }
+
+    .socialMedia {
+        visibility: hidden;
+    }
+
+    .navHeader ul {
+        visibility: hidden;
+    }
+
+    .burger {
+        visibility: visible;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .mainTitle {
+        font-size: 30px;
+        margin-top: 75px;
+    }
+
+    h1 {
+        font-weight: normal;
+        line-height: 0.93;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    .givingBackCon {
+        padding-top: 30px;
+    }
+
+    .givingBackImg {
+        width: 100%;
+    }
+
+    .linkIconsConCon i {
+        font-size: 2.5rem;
+    }
+
+    .linkIconsConCon p{
+        font-size: 1.5rem;
+    }
+
+    .linkIconsNames {
+        font-family: 'Nova Flat', cursive;
+    }
+
+    .theGram h2 {
+        padding: 10% 0;
+    }
+    
+    .gramPics:last-child {
+        display: none;
+    }
+
+    .gramPics:first-child {
+        margin-right: 18px;
+    }
+    .gramPics {
+        float: left;
+        width: calc(50% - 9px);
+    }
+
+    .navFooter li {
+        margin: 20px 30px 0 0;
+        font-size: 0.7rem;
+    }
+
+    .navFooter li:last-child {
+        margin-right: 0;
+    } 
+
+    .footerInfo:first-child h2 {
+        padding-bottom: 0;
+    }
+
+    .footerInfo {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footerInfo h2 {
+        margin: 40px 0 15px;
+    }
+
+    form {
+        font-size: 0.8rem;
+    }
+
+    
+    
+        /* 
+        *change the header vh to 80(playaround)
+        *add in new background header img
+        *remove nav and replace with burger
+        *remove social media 
+        *change mainitle size and position
+
+        *change all font sizes to rem
+        -----no----change header - speacilize in (x2)
+        
+        make givingback shoes 100%
+        change giving back title
+
+        change icon and p sizes to 30% less
+
+        change the gram header 
+        make the 2 images 50% and elimanate the last image 
+
+        decrease nav margin inbetween the links
+        (add links to the ul of navs btw)
+
+        stack contac underneat the newsletter 
+        add copyright
+
+        fix links
+
+
+        */
+  }
