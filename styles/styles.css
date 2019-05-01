@@ -265,7 +265,7 @@ input[type=email] {
 }
 
 button {
-    padding: 1.45% 0;
+    padding: 1.2% 0;
     background-color: rgb(24,102,132);
     border: 2px solid rgb(24,102,132);
     width: 20%;
@@ -291,6 +291,12 @@ button:hover {border-color: rgb(232,91,38);}
 }
 
 /* responsiveness ***************************** */
+
+@media (max-width: 1430px) {
+    button {width: 22%;}
+    input[type=email] {width: 76%}
+}
+
 
 @media (max-width: 1280px) {
     .givingBackCon {height: auto;}
@@ -325,7 +331,7 @@ button:hover {border-color: rgb(232,91,38);}
     }
   }
 
-@media (max-width: 810px) {
+@media (max-width: 830px) {
     .mainTitle {
         font-size: 50px; 
         margin-top: 380px;
